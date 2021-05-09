@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #666;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #fff;
+}
+
+.screen {
+    cursor: pointer;
+    width: 65%;
+    background-color: #000 !important;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.controls {
+    background: #333;
+    color: #fff;
+    width: 65%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.controls .btn {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.controls .buttons-panel {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60px;
+}
+
+.controls .fa-play {
+    background-color: #28a745;
+    width: 20px;
+    height: 20px;
+    display: block;
+    transform: translateX(-60%) rotate(45deg);
+    border-radius: 2px;
+    /* transition: 0.5s all; */
+}
+.controls .fa-stop {
+    background-color: #dc3545;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 2px;
+}
+
+.controls .timestamp {
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+@media(max-width: 960px) {
+    .screen, 
+    .controls {
+        width: 90%;
+    }
+}
